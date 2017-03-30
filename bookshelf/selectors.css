@@ -1,0 +1,34 @@
+query: [id$=n]
+result: <book id="frankenstein"></book>
+        <watch id="anne-klein"></watch>
+        <ribbon id="random-ribbon"></ribbon>
+        <snowglobe id="azerbaijan"></snowglobe>
+
+query: [bookcase #artistic::nth-child(2)]
+result: <brush-set>
+          <watercolor id="15-brushes"></watercolor>
+          <acrlilyc id="7-brushes"></acrlilyc>
+          <oil id="3-brushes"></oil>
+        </brush-set>
+        <acrylic-paint id="ivory-black"></acrylic-paint>
+        <acrylic-paint id="cadmium-yellow"></acrylic-paint>
+        <acrylic-paint id="cadmium-red"></acrylic-paint>
+        <acrylic-paint id="titanium-white"></acrylic-paint>
+        <clothepins></clothepins>
+        <dust></dust>
+
+query: [id|=sketch]
+result: <sketchbook id="sketch-first"></sketchbook>
+        <sketchbook id="sketch-favorite"></sketchbook>
+        <sketchbook id="sketch-third"></sketchbook>
+
+query: [shelf::first-line]
+result: <watercolor-paint-set></watercolor-paint-set>
+        <book id="tea"></book>
+        <box id="left"></box>
+        <snowglobe id="new-york-1"></snowglobe>
+
+query: [bookcase::nth-child(odd)]
+result: <shelf id="most-unorganised"></shelf>
+        <shelf id="artistic"></shelf>
+
