@@ -1,0 +1,181 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Sintony', sans-serif;
+
+}
+
+#cursor {
+  animation: blinker 1s step-end infinite; 
+  //you can change 'step-end' to 'linear' for smooth transition
+}
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+#container-typer {
+  background-color: #efefef;
+  width: 1000px;
+  padding: 50px;
+  margin: 50px auto;
+  word-wrap: break-word;
+  text-align:center;
+}
+.inner {
+  /*display:block;*/
+}
+
+
+a {
+  color: #B9BCCB;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  
+}
+
+#a-art:hover {
+  color: #FF3737; 
+}
+
+#a-animals:hover {
+  color: #375EFF;
+}
+
+#a-clothes:hover {
+  color:  #FFF637;
+}
+
+#a-colors:hover {
+  color:  #FF5A37;
+}
+
+#a-dogs:hover {
+  color:  #37FF6B;
+}
+
+#a-emotions:hover {
+  color:  #F637FF;
+}
+
+#a-food:hover {
+  color:  #37E1FF;
+}
+
+#a-beach:hover {
+  color:  #6437FF;
+}
+
+#a-money:hover {
+  color:  #FF3737;
+}
+
+#a-shapes:hover {
+  color:  #37FFE7;
+}
+
+#a-time:hover {
+  color:  #FF8937;
+}
+
+#a-weather:hover {
+  color:  #37FFFC;
+}
+
+#a-cats:hover {
+  color:  #FF6437;
+}
+
+#a-capitals:hover {
+  color:  #A1FF37;
+}
+
+#a-digital:hover {
+  color:  #37A4FF;
+}
+
+
+.menu-container {
+  margin: 4vmin;
+  width: 5vmin;
+  height:18vmin;
+  z-index:0;
+}
+
+
+.menu {
+  background-color: #FF3737;
+  border-radius: 5px;
+  width: 5vmin;
+  height: 5vmin;
+  position: fixed;
+  z-index:1;
+}
+
+.menu:hover {
+  background-color: #B9BCCB;
+}
+
+.menu:active {
+  background-color: white;
+}
+
+/*.second {
+  margin-top: 70px;
+}*/
+
+.third {
+  margin-top: 115px;
+
+}
+
+
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#list-container {
+  width: 55vw;
+  height: 70vh;
+  display:table-caption;
+  font-size: 9vmin;
+  text-decoration: none;
+  text-align: center;
+}
+
+.title {
+  width: 60vw;
+  height: 10vh;
+  z-index:2;
+  margin-left: 20vw;
+  margin-top:5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35pt;
+  color: #B9BCCB;
+
+}
+
+.random-word {
+  font-size: 6vmin;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
