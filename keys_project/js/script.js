@@ -1,10 +1,7 @@
   var inputWord = ''
 
   var dictionary = {
-    // 'zsedc' : 'A',
-    // 'xdrfv' : 'A',
-    // 'cftgb' : 'A',
-    
+   
     'zsedc' : 'A',
     'xdrfv' : 'A',
     'cftgb' : 'A',
@@ -208,32 +205,32 @@
     'rtygbm' : '?',
     'tyuhn,' : '?',
     'yuijm.' : '?',
-    'q' : '.',
-    'w' : '.',
-    'e' : '.',
-    'r' : '.',
-    't' : '.',
-    'y' : '.',
-    'u' : '.',
-    'i' : '.',
-    'o' : '.',
-    'p' : '.',
-    'a' : '.',
-    's' : '.',
-    'd' : '.',
-    'f' : '.',
-    'g' : '.',
-    'h' : '.',
-    'j' : '.',
-    'k' : '.',
-    'l' : '.',
-    'z' : '.',
-    'x' : '.',
-    'c' : '.',
-    'v' : '.',
-    'b' : '.',
-    'n' : '.',
-    'm' : '.',
+    // 'q' : '.',
+    // 'w' : '.',
+    // 'e' : '.',
+    // 'r' : '.',
+    // 't' : '.',
+    // 'y' : '.',
+    // 'u' : '.',
+    // 'i' : '.',
+    // 'o' : '.',
+    // 'p' : '.',
+    // 'a' : '.',
+    // 's' : '.',
+    // 'd' : '.',
+    // 'f' : '.',
+    // 'g' : '.',
+    // 'h' : '.',
+    // 'j' : '.',
+    // 'k' : '.',
+    // 'l' : '.',
+    // 'z' : '.',
+    // 'x' : '.',
+    // 'c' : '.',
+    // 'v' : '.',
+    // 'b' : '.',
+    // 'n' : '.',
+    // 'm' : '.',
     'qa' : ',',
     'ws' : ',',
     'ed' : ',',
@@ -269,7 +266,7 @@ $(document).ready(function() {
     var char = String.fromCharCode(e.which);
     console.log("entry #" + entryCount + " : " + e.which + " | " + char + ". Showing " + displayCount);
     saveCharacter(char);
-    createElement(char);
+    //createElement(char);
   });
 
   //capture function keys
@@ -337,8 +334,11 @@ function searchForWord(w) {
   for(var i = 0; i < word.length; i++) {
     if(word[i] == w) {
       var newWord = dictionary [ word[i]  ];
-      console.log(newWord)
-      cursor.before('<span class="replaced">replaced</span>')
+      // console.log(newWord)
+      // cursor.before('<span class="replaced">replaced</span>')
+      console.log('replacing ' + w + ' with ' + newWord);
+      cursor.before('<span class="replaced">' + newWord + '</span>')
+      inputWord = "";
       }
     }
 }
