@@ -4,29 +4,32 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Sintony', sans-serif;
-
 }
 
 #cursor {
-  animation: blinker 1s step-end infinite; 
-  //you can change 'step-end' to 'linear' for smooth transition
+  animation: blinker 1s linear infinite; 
+  /*change 'step-end' to 'linear' for smooth transition*/
+  font-weight: 50;
+
 }
+
 @keyframes blinker {  
   50% { opacity: 0; }
 }
 
 #container-typer {
-  background-color: #efefef;
-  width: 1000px;
+  
+  width: 800px;
   padding: 50px;
   margin: 50px auto;
   word-wrap: break-word;
   text-align:center;
+  font-size: 150px;
 }
+
 .inner {
   /*display:block;*/
 }
-
 
 a {
   color: #B9BCCB;
@@ -101,19 +104,19 @@ a:active {
 
 .menu-container {
   margin: 4vmin;
-  width: 5vmin;
-  height:18vmin;
-  z-index:0;
+  width: 10vmin;
+  height:4vmin;
+  
 }
 
 
-.menu {
-  background-color: #FF3737;
+.instructions {
+  color: #B9BCCB;
   border-radius: 5px;
   width: 5vmin;
   height: 5vmin;
   position: fixed;
-  z-index:1;
+  z-index:5;
 }
 
 .menu:hover {
@@ -141,16 +144,17 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-#list-container {
+/*#list-container {
   width: 55vw;
   height: 70vh;
   display:table-caption;
-  font-size: 9vmin;
+  font-size: 11vmin;
   text-decoration: none;
   text-align: center;
-}
+}*/
 
 .title {
   width: 60vw;
@@ -166,10 +170,59 @@ a:active {
 
 }
 
-.random-word {
-  font-size: 6vmin;
-  text-align: center;
+#draggable {
+  width: 120vmin;
+  height:80vmin;
+  border: 10px solid #B9BCCB;
+  background-color: white;
+  overflow: scroll;
 }
+
+#inside {
+  margin: 10px;
+}
+
+#pic {
+  width: 100%;
+  height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
