@@ -1,6 +1,9 @@
-  var inputWord = ''
+    var inputWord = ''
 
-var randomWord = ['design', 'aardvark', 'baboon', 'shoulder pads', 'peach', 'navy blue', 'gold', 'dachshund', 'poodle', 'boredom', 'happy', 'weird', 'caviar', 'sauerkraut', 'moist', 'lol']
+    var randomWords = ['design', 'aardvark', 'baboon', 'shoulder pads', 'peach', 'navy blue', 'gold', 'dachshund', 'poodle', 'boredom', 'happy', 'weird', 'caviar', 'sauerkraut', 'moist', 'lol']
+
+    var randomWord = randomWords[ Math.floor(Math.random() * randomWords.length) ]
+
 
   var dictionary = {
    
@@ -292,17 +295,13 @@ $(document).ready(function() {
         e.//functionhere();
         entryCount ++;
         displayCount --;
-        // this is how Roon explained it, but I believe this line appears when calling a function: searchForWord(inputWord);
+        // searchForWord(inputWord);
     }
 
   });
 
 });
-    //and then I need to call the function, but I'm not sure how
-    // function deleteElement() {
-    //   $(();
-    //   inputWord = '';
-    // }
+
 
 
 
@@ -368,8 +367,7 @@ function searchForWord(w) {
 //   if (k == " ") { elem.before('<span class="inner">&nbsp;</span>') };
 // }
 
-// function randomWord
-//     var Object = Array [Math.floor (Math.random() * Array.length)];
+
 
 
 

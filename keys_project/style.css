@@ -156,7 +156,7 @@ a:active {
   text-align: center;
 }*/
 
-.title {
+#title {
   width: 60vw;
   height: 10vh;
   z-index:2;
