@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Decode</title>
+</head>
+<body>
+
+<div class="row"> 
+  <span class="column pixel-0"> </span>
+  <span class="column pixel-1"> </span>
+  <span class="column pixel-2"> </span>
+  <span class="column pixel-3"> </span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+var url = "https://raw.githubusercontent.com/robbykraft/Interaction/master/mystery.json"
+
+$.getJSON(url, function(data) {
+    //JSON is in the data
+    console.log(data)
+    var image = data.pixels;
+    var image = image [0][0];
+    console.log(image);
+
+
+// start here
+for (var i = data.length - 1; i >= 0; i--) {
+  
+  // array set loop
+  var arraySet = data[i];
+
+  $('body').append('<div class="row '+arraySetValue+' "> </div>');
+
+  // console.log(arraySetValue);
+
+  // create the row html markup ex: <div class="row"> hint: look at jquery append...
+
+  // go inside this set
+  for (var i = arraySet.length - 1; i >= 0; i--) {
+    var arraySetValue = arraySet[i];
+
+    // create html markup ex: <span class="column pixel-0"> </span>
+    // assign arraySetValue to the class
+    // push the html markup to the row
+
+    $('body').append('<span class="column '+arraySetValue+' "></span>');
+  }
+
+}
+}); 
+
+</script>
+</body>
+</html>
+<style> 
+
+/*.row {
+  overflow: hidden;
+}*/
+.column {
+  width: 5px;
+  height: 5px;
+  display: block;
+  float: left;
+}
+.pixel-0 {
+  background: black;
+}
+.pixel-1 {
+  background: red;
+}
+.pixel-2 {
+  background: yellow;
+}
+.pixel-3 {
+  background: blue;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
