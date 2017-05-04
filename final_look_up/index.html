@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Look Up - Collection of Ceiling Photographs</title>
+  <meta name="description" content="This collection helps you to become more aware of your surroundings, so...look up.">
+
+
+<meta property="og:title" content="Look Up - Collection of Ceiling Photographs">
+<meta property="og:description" content="This collection helps you to become more aware of your surroundings.">
+<meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+<meta property="og:url" content="http://euro-travel-example.com/index.htm">
+<meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- 1. Link to jQuery (1.8 or later), --> <!-- 33 KB -->
@@ -14,80 +22,139 @@
 
 <body>
 
-<div class="container">
+<div class="nav container">
 
-<div class="logo"></div>
+<div class="nav logo"></div>
 
-<div class="function">
+<div class="nav function">
   <a href="#"><div class="title">FUNCTION</div></a>
     <div class="menu">
     <ul>
-      <a href="#"><li id="wiring">wiring</li></a>
-      <a href="#"><li id="lighting">lighting</li></a>
-      <a href="#"><li id="piping">piping</li></a>
+      <li>
+        <a href="#function-wiring">wiring</a>
+      </li>
+      <li>
+        <a href="#function-piping">lighting</a>
+      </li>
+      <li>
+        <a href="#function-lighting">piping</a>
+      </li>
     </ul>
   </div>
 </div>
 
-<div class="location">
-  <a href="#"><div class="title">LOCATION</div></a>
+<div class="nav location">
+  <a href="#">
+    <div class="title">LOCATION</div>
+  </a>
     <div class="menu">
       <ul>
-        <a href="#"><li id="brooklyn">Brooklyn</li></a>
-        <a href="#"><li id="manhattan">Manhattan</li></a>
+        <li>
+          <a href="#location-brooklyn">Brooklyn</a>
+        </li>
+        <li>
+          <a href="#location-manhattan">Manhattan</a>
+        </li>
       </ul>
       </div>
 </div>
 
-<div class="color">
-  <a href="#"><div class="title">COLOR</div></a>
+<div class="nav color">
+  
+  <a href="#">
+    <div class="title">COLOR</div>
+  </a>
+
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="#color-white">white</a>
+      </li>
+      <li>
+        <a href="#color-black">black</a>
+      </li>
+      <li>
+        <a href="#color-yellow">yellow</a>
+      </li>
+      <li>
+        <a href="#color-blue">blue</a>
+      </li>
+      <li>
+        <a href="#color-green">green</a>
+      </li>
+      <li>
+        <a href="#color-red">red</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="nav floor">
+    <a href="#">
+      <div class="title">FLOOR</div>
+      </a>
     <div class="menu">
       <ul>
-        <a href="#"><li id="white">white</li></a>
-        <a href="#"><li id="black">black</li></a>
-        <a href="#"><li id="yellow">yellow</li></a>
-        <a href="#"><li id="blue">blue</li></a>
-        <a href="#"><li id="green">green</li></a>
-        <a href="#"><li id="red">red</li></a>
+        <li>
+          <a href="#floor-first">1</a>
+        </li>
+        <li>
+          <a href="#floor-second">2</a>
+        </li>
+        <li>
+          <a href="#floor-third">3</a>
+        </li>
+        <li>
+          <a href="#floor-fourth">4</a>
+        </li>
+        <li>
+          <a href="#floor-fifth">5</a>
+        </li>
+        <li>
+          <a href="#floor-sixth">6</a>
+        </li>
+        <li>
+          <a href="#floor-seventh">7</a>
+        </li>
+        <li>
+          <a href="#floor-eighth">8</a>
+        </li>
+        <li>
+          <a href="#floor-ninth">9</a>
+        </li>
+        <li>
+          <a href="#floor-tenth">10</a>
+        </li>
+        <li>
+          <a href="#floor-eleventh">11</a>
+        </li>
       </ul>
       </div>
 </div>
 
-<div class="floor">
-    <a href="#"><div class="title">FLOOR</div></a>
+<div class="nav minimal">
+    <a href="#">
+      <div class="title">MINIMAL</div>
+      </a>
     <div class="menu">
-      <ul>
-        <a href="#"><li id="first">1</li></a>
-        <a href="#"><li id="second">2</li></a>
-        <a href="#"><li id="third">3</li></a>
-        <a href="#"><li id="fourth">4</li></a>
-        <a href="#"><li id="fifth">5</li></a>
-        <a href="#"><li id="sixth">6</li></a>
-        <a href="#"><li id="seventh">7</li></a>
-        <a href="#"><li id="eigth">8</li></a>
-        <a href="#"><li id="ninth">9</li></a>
-        <a href="#"><li id="tenth">10</li></a>
-        <a href="#"><li id="eleventh">11</li></a>
-      </ul>
-      </div>
-</div>
-
-<div class="time">
-    <a href="#"><div class="title">TIME</div></a>
-    <div class="menu">
-      <ul>
-        <a href="#"><li id="day">day</li></a>
-        <a href="#"><li  id="night">night</li></a>
-      </ul>
+    <li><a href="#minimal-ceiling">ceiling</a></li>
       </div>
 </div>
 
 </div>
   <!-- 2. Add images to <div class="fotorama"></div>. -->
-<div class="fotorama">
-  <img class="lighting piping white yellow second manhattan" src="assets/IMG_6915.jpg">
-  <img class="wiring lighting red fourth manhattan" src="assets/IMG_6913.jpg">
-  <img class="wiring lighting red fourth manhattan" src="assets/IMG_6914.jpg">
+
+<div class="fotorama location brooklyn">
+  <img src="assets/IMG_7176.jpg">
+  <img src="assets/IMG_7212.jpg">
+  <img src="assets/IMG_7403.jpg">
+  <img src="assets/IMG_7404.jpg">
+
+</div>
+
+<div class="fotorama location manhattan">
+  <img src="assets/IMG_6913.jpg">
+  <img src="assets/IMG_6914.jpg">
   <img src="assets/IMG_6916.jpg">
   <img src="assets/IMG_6917.jpg">
   <img src="assets/IMG_6918.jpg">
@@ -117,8 +184,6 @@
   <img src="assets/IMG_7164.jpg">
   <img src="assets/IMG_7165.jpg">
   <img src="assets/IMG_7166.jpg">
-  <img src="assets/IMG_7176.jpg">
-  <img src="assets/IMG_7212.jpg">
   <img src="assets/IMG_7328.jpg">
   <img src="assets/IMG_7329.jpg">
   <img src="assets/IMG_7330.jpg">
@@ -181,19 +246,406 @@
   <img src="assets/IMG_7387.jpg">
   <img src="assets/IMG_7388.jpg">
   <img src="assets/IMG_7399.jpg">
-  <img src="assets/IMG_7403.jpg">
+
+</div>
+
+<div class="fotorama color black">
+  <img src="assets/IMG_6915.jpg">
+  <img src="assets/IMG_6916.jpg">
+  <img src="assets/IMG_6917.jpg">
+  <img src="assets/IMG_7373.jpg">
+  <img src="assets/IMG_7122.jpg">
+  <img src="assets/IMG_7328.jpg">
+  <img src="assets/IMG_7329.jpg">
+  <img src="assets/IMG_7333.jpg">
+  <img src="assets/IMG_7339.jpg">
+  <img src="assets/IMG_7379.jpg">
+  <img src="assets/IMG_7386.jpg">
+
+</div>
+
+<div class="fotorama color white">
+  <img  src="assets/IMG_6915.jpg">
+  <img src="assets/IMG_6916.jpg">
+  <img src="assets/IMG_6917.jpg">
+  <img src="assets/IMG_6918.jpg">
+  <img src="assets/IMG_6919.jpg">
+  <img src="assets/IMG_6920.jpg">
+  <img src="assets/IMG_6921.jpg">
+  <img src="assets/IMG_6922.jpg">
+  <img src="assets/IMG_6923.jpg">
+  <img src="assets/IMG_7120.jpg">
+  <img src="assets/IMG_7122.jpg">
+  <img src="assets/IMG_7124.jpg">
+  <img src="assets/IMG_7125.jpg">
+  <img src="assets/IMG_7127.jpg">
+  <img src="assets/IMG_7154.jpg">
+  <img src="assets/IMG_7155.jpg">
+  <img src="assets/IMG_7157.jpg">
+  <img src="assets/IMG_7330.jpg">
+  <img src="assets/IMG_7333.jpg">
+  <img src="assets/IMG_7335.jpg">
+  <img src="assets/IMG_7337.jpg">
+  <img src="assets/IMG_7341.jpg">
+  <img src="assets/IMG_7338.jpg">
+  <img src="assets/IMG_7339.jpg">
+  <img src="assets/IMG_7342.jpg">
+  <img src="assets/IMG_7343.jpg">
+  <img src="assets/IMG_7351.jpg">
+  <img src="assets/IMG_7352.jpg">
+  <img src="assets/IMG_7355.jpg">
+  <img src="assets/IMG_7357.jpg">
+  <img src="assets/IMG_7358.jpg">
+  <img src="assets/IMG_7359.jpg">
+  <img src="assets/IMG_7360.jpg">
+  <img src="assets/IMG_7361.jpg">
+  <img src="assets/IMG_7362.jpg">
+  <img src="assets/IMG_7363.jpg">
+  <img src="assets/IMG_7364.jpg">
+  <img src="assets/IMG_7366.jpg">
+  <img src="assets/IMG_7368.jpg">
+  <img src="assets/IMG_7369.jpg">
+  <img src="assets/IMG_7371.jpg">
+  <img src="assets/IMG_7374.jpg">
+  <img src="assets/IMG_7380.jpg">
+  <img src="assets/IMG_7384.jpg">
+  <img src="assets/IMG_7385.jpg">
+  <img src="assets/IMG_7388.jpg">
   <img src="assets/IMG_7404.jpg">
 
 
+</div>
+
+<div class="fotorama color yellow">
+  <img  src="assets/IMG_6915.jpg">
+  <img  src="assets/IMG_7123.jpg">
+  <img  src="assets/IMG_7158.jpg">
+  <img  src="assets/IMG_6917.jpg">
+  <img  src="assets/IMG_7330.jpg">
+  <img  src="assets/IMG_6916.jpg">
+  <img  src="assets/IMG_7334.jpg">
+  <img  src="assets/IMG_7372.jpg">
+
 
 </div>
+
+<div class="fotorama color blue">
+  <img src="assets/IMG_6918.jpg">
+  <img src="assets/IMG_6919.jpg">
+  <img src="assets/IMG_7156.jpg">
+  <img src="assets/IMG_7159.jpg">
+  <img src="assets/IMG_7331.jpg">
+  <img src="assets/IMG_7336.jpg">
+  <img src="assets/IMG_7335.jpg">
+  <img src="assets/IMG_7345.jpg">
+  <img src="assets/IMG_7363.jpg">
+  <img src="assets/IMG_7364.jpg">
+  <img src="assets/IMG_7369.jpg">
+  <img src="assets/IMG_7371.jpg">
+  <img src="assets/IMG_7375.jpg">
+  <img src="assets/IMG_7376.jpg">
+  <img src="assets/IMG_7378.jpg">
+  <img src="assets/IMG_7403.jpg">
+
+</div>
+
+<div class="fotorama color green">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor first">
+  <img  src="assets/IMG_7123.jpg">
+  <img  src="assets/IMG_7176.jpg">
+  <img  src="assets/IMG_7212.jpg">
+  <img  src="assets/IMG_7328.jpg">
+  <img  src="assets/IMG_7330.jpg">
+  <img  src="assets/IMG_7346.jpg">
+  <img  src="assets/IMG_7347.jpg">
+  <img  src="assets/IMG_7329.jpg">
+  <img  src="assets/IMG_7349.jpg">
+  <img  src="assets/IMG_7348.jpg">
+  <img  src="assets/IMG_7161.jpg">
+</div>
+
+<div class="fotorama floor second">
+  <img  src="assets/IMG_6917.jpg">
+  <img  src="assets/IMG_7158.jpg">
+  <img  src="assets/IMG_7379.jpg">
+  <img  src="assets/IMG_7157.jpg">
+  <img  src="assets/IMG_7162.jpg">
+  <img  src="assets/IMG_7160.jpg">
+  <img  src="assets/IMG_7332.jpg">
+  <img  src="assets/IMG_6916.jpg">
+  <img  src="assets/IMG_7333.jpg">
+  <img  src="assets/IMG_7334.jpg">
+  <img  src="assets/IMG_7343.jpg">
+  <img  src="assets/IMG_6915.jpg">
+  <img  src="assets/IMG_7351.jpg">
+  <img  src="assets/IMG_7387.jpg">
+  
+
+</div>
+
+<div class="fotorama floor third">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor fourth">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor fifth">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor sixth">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor seventh">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor eighth">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor ninth">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor tenth">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+<div class="fotorama floor eleventh">
+  <img  src="assets/IMG_6920.jpg">
+  <img  src="assets/IMG_7163.jpg">
+  <img  src="assets/IMG_7165.jpg">
+  <img  src="assets/IMG_7166.jpg">
+  <img  src="assets/IMG_7176.jpg">
+</div>
+
+
+<div class="fotorama function piping">
+  <img src="assets/IMG_6915.jpg">
+  <img src="assets/IMG_6916.jpg">
+  <img src="assets/IMG_6917.jpg">
+  <img src="assets/IMG_6918.jpg">
+  <img src="assets/IMG_6919.jpg">
+  <img src="assets/IMG_6921.jpg">
+  <img src="assets/IMG_7120.jpg">
+  <img src="assets/IMG_7121.jpg">
+  <img src="assets/IMG_7122.jpg">
+  <img src="assets/IMG_7123.jpg">
+  <img src="assets/IMG_7124.jpg">
+  <img src="assets/IMG_7125.jpg">
+  <img src="assets/IMG_7126.jpg">
+  <img src="assets/IMG_7127.jpg">
+  <img src="assets/IMG_7156.jpg">
+  <img src="assets/IMG_7158.jpg">
+  <img src="assets/IMG_7159.jpg">
+  <img src="assets/IMG_7163.jpg">
+  <img src="assets/IMG_7164.jpg">
+  <img src="assets/IMG_7165.jpg">
+  <img src="assets/IMG_7166.jpg">
+  <img src="assets/IMG_7330.jpg">
+  <img src="assets/IMG_7333.jpg">
+  <img src="assets/IMG_7334.jpg">
+  <img src="assets/IMG_7335.jpg">
+  <img src="assets/IMG_7336.jpg">
+  <img src="assets/IMG_7337.jpg">
+  <img src="assets/IMG_7339.jpg">
+  <img src="assets/IMG_7340.jpg">
+  <img src="assets/IMG_7341.jpg">
+  <img src="assets/IMG_7345.jpg">
+  <img src="assets/IMG_7351.jpg">
+  <img src="assets/IMG_7352.jpg">
+  <img src="assets/IMG_7353.jpg">
+  <img src="assets/IMG_7354.jpg">
+  <img src="assets/IMG_7355.jpg">
+  <img src="assets/IMG_7357.jpg">
+  <img src="assets/IMG_7358.jpg">
+  <img src="assets/IMG_7359.jpg">
+  <img src="assets/IMG_7360.jpg">
+  <img src="assets/IMG_7361.jpg">
+  <img src="assets/IMG_7362.jpg">
+  <img src="assets/IMG_7363.jpg">
+  <img src="assets/IMG_7364.jpg">
+  <img src="assets/IMG_7365.jpg">
+  <img src="assets/IMG_7366.jpg">
+  <img src="assets/IMG_7367.jpg">
+  <img src="assets/IMG_7368.jpg">
+  <img src="assets/IMG_7369.jpg">
+  <img src="assets/IMG_7370.jpg">
+  <img src="assets/IMG_7371.jpg">
+  <img src="assets/IMG_7372.jpg">
+  <img src="assets/IMG_7373.jpg">
+  <img src="assets/IMG_7374.jpg">
+  <img src="assets/IMG_7375.jpg">
+  <img src="assets/IMG_7376.jpg">
+  <img src="assets/IMG_7377.jpg">
+  <img src="assets/IMG_7378.jpg">
+  <img src="assets/IMG_7380.jpg">
+  <img src="assets/IMG_7381.jpg">
+  <img src="assets/IMG_7382.jpg">
+  <img src="assets/IMG_7383.jpg">
+  <img src="assets/IMG_7385.jpg">
+  <img src="assets/IMG_7386.jpg">
+</div>
+
+<div class="fotorama function wiring">
+  <img src="assets/IMG_6918.jpg">
+  <img src="assets/IMG_6919.jpg">
+  <img src="assets/IMG_6921.jpg">
+  <img src="assets/IMG_7120.jpg">
+  <img src="assets/IMG_7121.jpg">
+  <img src="assets/IMG_7125.jpg">
+  <img src="assets/IMG_7353.jpg">
+  <img src="assets/IMG_7354.jpg">
+  <img src="assets/IMG_7363.jpg">
+  <img src="assets/IMG_7371.jpg">
+  <img src="assets/IMG_7372.jpg">
+  <img src="assets/IMG_7373.jpg">
+  <img src="assets/IMG_7375.jpg">
+  <img src="assets/IMG_7376.jpg">
+  <img src="assets/IMG_7378.jpg">
+  <img src="assets/IMG_7380.jpg">
+  <img src="assets/IMG_7381.jpg">
+  <img src="assets/IMG_7382.jpg">
+  <img src="assets/IMG_7383.jpg">
+  <img src="assets/IMG_7384.jpg">
+</div>
+
+<div class="fotorama function lighting">
+  <img src="assets/IMG_6913.jpg">
+  <img src="assets/IMG_6914.jpg">
+  <img src="assets/IMG_6916.jpg">
+  <img src="assets/IMG_7120.jpg">
+  <img src="assets/IMG_7121.jpg">
+  <img src="assets/IMG_7123.jpg">
+  <img src="assets/IMG_7126.jpg">
+  <img src="assets/IMG_7154.jpg">
+  <img src="assets/IMG_7155.jpg">
+  <img src="assets/IMG_7159.jpg">
+  <img src="assets/IMG_7160.jpg">
+  <img src="assets/IMG_7162.jpg">
+  <img src="assets/IMG_7176.jpg">
+  <img src="assets/IMG_7212.jpg">
+  <img src="assets/IMG_7328.jpg">
+  <img src="assets/IMG_7329.jpg">
+  <img src="assets/IMG_7331.jpg">
+  <img src="assets/IMG_7332.jpg">
+  <img src="assets/IMG_7333.jpg">
+  <img src="assets/IMG_7336.jpg">
+  <img src="assets/IMG_7337.jpg">
+  <img src="assets/IMG_7340.jpg">
+  <img src="assets/IMG_7342.jpg">
+  <img src="assets/IMG_7343.jpg">
+  <img src="assets/IMG_7344.jpg">
+  <img src="assets/IMG_7345.jpg">
+  <img src="assets/IMG_7346.jpg">
+  <img src="assets/IMG_7347.jpg">
+  <img src="assets/IMG_7348.jpg">
+  <img src="assets/IMG_7350.jpg">
+  <img src="assets/IMG_7356.jpg">
+  <img src="assets/IMG_7359.jpg">
+  <img src="assets/IMG_7367.jpg">
+  <img src="assets/IMG_7368.jpg">
+  <img src="assets/IMG_7379.jpg">
+  <img src="assets/IMG_7399.jpg">
+  <img src="assets/IMG_7404.jpg">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="fotorama minimal ceiling">
+  <img  src="assets/IMG_7120.jpg">
+  <img  src="assets/IMG_7155.jpg">
+  <img  src="assets/IMG_7160.jpg">
+  <img  src="assets/IMG_7335.jpg">
+  <img  src="assets/IMG_7343.jpg">
+  <img  src="assets/IMG_7403.jpg">
+  <img  src="assets/IMG_7404.jpg">
+</div>
+
+
+
 
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
 <script src="js/jquery-3.2.0.min.js"></script>
+
+<script src="js/script.js"></script>
 
 </body>
 
