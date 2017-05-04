@@ -2,14 +2,11 @@ $(document).ready(function() {
 
   console.log("ready");
 
-// var random = Math.floor(Math.random() * $('img').length);
-// $('img').hide().eq(random).show();
 
   $(".about").click(function(){
           $(".text").toggle();
   });
 
-  
 
   var allSlideshows = $('.fotorama');
 
@@ -38,35 +35,16 @@ $(document).ready(function() {
     return false;
   });
 
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
-
-
-// // Close the dropdown if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-
-// myFunction();
-
-// var li = document.getElementsByTagName("li");
-
-// for(var i = 0;i<li.length;i++){
-//     li[i].addEventListener("click", myScript);
-// }
-
-// function myScript(e){
-//     alert(e.target.attributes.id.value);       
-// }
+  function reposition(){
+  var screenW = document.body.clientWidth;
+  var screenH = document.body.clientHeight;
+  var menuW = document.getElementById("menu").offsetWidth;
+  var menuH = document.getElementById("menu").offsetHeight;
+  document.getElementById("menu").style.left = (20) + 'px';
+  document.getElementById("menu").style.top = ((screenH-menuH)-20) + 'px';
+  document.getElementById("menu").style.width = (screenW-40) + 'px';
+}
+reposition();
+window.addEventListener("resize", reposition);
 
 });
