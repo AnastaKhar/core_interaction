@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homework 6</title>
+  <style> 
+
+    .pixel-0 {
+      background: yellow;
+    }
+    .pixel-1 {
+      background: lightblue;
+    }
+    .pixel-2 {
+      background: pink;
+    }
+    .pixel-3 {
+      background: blue;
+    }
+
+    .line {
+      overflow: hidden;
+    }
+
+    .column {
+      width: 15px;
+      height: 15px;
+      display: block;
+      float: left;
+    }
+</style>
+</head>
+<body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+  var url = "https://raw.githubusercontent.com/robbykraft/Interaction/master/mystery.json"
+  
+  var render = function(data){
+    var pixel = data.pixels;
+
+    pixel = pixel.reverse();
+  
+    for (var i = pixel.length - 1; i >= 0; i--) {
+      
+      var arraySet = pixel[i];
+      var line = 'line-id-'+i;
+      
+      $('body').append('<div class="line '+line+' "> </div>');
+
+      var thisLine = $('body').find('.'+line);
+      for (var j = arraySet.length - 1; j >= 0; j--){
+        
+        var arrayValue = arraySet[j];
+
+        $(thisLine).append('<span class="column pixel-'+arrayValue+' "></span>');
+      };
+    };
+  };
+
+  var makeImage = $.getJSON(url, function(data){
+    render(data);
+  });
+
+
+</script>
+</body>
+</html>
